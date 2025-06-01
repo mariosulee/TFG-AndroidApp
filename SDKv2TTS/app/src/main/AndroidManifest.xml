@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bfr.sdkv2_tts">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.speech.tts" />
+
+    <uses-permission android:name="com.bfr.buddy.resource.SPEECH" />
+    <uses-permission android:name="com.bfr.buddy.resource.LISTEN" />
+    <uses-permission android:name="com.bfr.buddy.resource.WHEELS" />
+    <uses-permission android:name="com.bfr.buddy.resource.HEAD" />
+    <uses-permission android:name="com.bfr.buddy.resource.LEDS" />
+    <uses-permission android:name="com.bfr.buddy.resource.SENSOR_MODULE" />
+    <uses-permission android:name="com.bfr.buddy.resource.FACE" />
+    <uses-permission android:name="com.bfr.buddy.resource.GUI" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".AppActivity"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SDKv2TTS"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/BuddyTheme">
+        <activity
+            android:name=".Despedida"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name=".JuegoPantalla4"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".JuegoPantalla3"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".JuegoPantalla2"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".STT"
+            android:exported="false" />
+        <activity
+            android:name=".JuegoPantalla"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- WelcomePage ya no tiene el filtro MAIN -->
+        <activity
+            android:name=".WelcomePage"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+            <!-- No es la actividad principal, ya no tiene el filtro -->
+        </activity>
+    </application>
+
+</manifest>

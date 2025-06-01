@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#314757"
+    tools:context=".WelcomePage">
+
+  <!-- TITULO ENCIMA DEL TEXTO DE INSTRUCCIONES -->
+
+  <TextView
+      android:id="@+id/tituloInstrucciones"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="30dp"
+      android:layout_marginTop="32dp"
+      android:gravity="center"
+      android:text="INSTRUCCIONES DEL JUEGO"
+      android:textColor="#8C88B6FF"
+      android:textSize="26sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.56"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <!-- parrafo con las instrucciones-->
+  <TextView
+      android:id="@+id/instruccionesTexto"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="80dp"
+      android:layout_marginLeft="50dp"
+      android:gravity="center"
+      android:text="..."
+      android:textColor="#FFFFFF"
+      android:textSize="15sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+
+  <!-- BOTON PARA LEER EN VOZ ALTA -->
+  <Button
+      android:id="@+id/botonLeer"
+      android:layout_width="250dp"
+      android:layout_height="60dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginLeft="50dp"
+      android:backgroundTint="#FFA500"
+      android:text="Leer en voz alta"
+      android:textColor="#FFFFFF"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/instruccionesTexto" />
+
+
+  <!-- CONTROL DE VOLUMEN -->
+  <SeekBar
+      android:id="@+id/controlVolumen"
+      android:layout_width="308dp"
+      android:layout_height="27dp"
+      android:layout_marginTop="10dp"
+      android:backgroundTint="#FFFFFF"
+      android:layout_marginLeft="50dp"
+      android:max="100"
+      android:progress="50"
+      android:progressTint="#FFFFFF"
+      android:thumbTint="#002C5B"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/botonLeer" />
+
+
+  <!--BOTON PARA DETENER EL LEER INSTRUCCIONES-->
+  <Button
+      android:id="@+id/botonStop"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="52dp"
+      android:backgroundTint="#FF0000"
+      android:text="Detener"
+      android:textStyle="bold"
+      android:textColor="#FFFFFF"
+      android:layout_marginLeft="50dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.499"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/botonLeer" />
+
+
+
+  <!--BOTON DE VOLVER A LA PRIMERA PANTALLA-->
+  <Button
+      android:id="@+id/botonVolverAtras"
+      android:layout_width="144dp"
+      android:layout_height="51dp"
+      android:backgroundTint="#002C5B"
+      android:fontFamily="@font/fa_solid_900"
+      android:gravity="center"
+      android:text="VOLVER ATRÁS"
+      android:textAllCaps="false"
+      android:textColor="#FFFFFF"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.027"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.959" />
+
+
+
+
+  <!-- BOTON PARA INICIAR EL JUEGO -->
+  <Button
+      android:id="@+id/botonComenzar"
+      android:layout_width="128dp"
+      android:layout_height="84dp"
+      android:layout_marginBottom="16dp"
+      android:backgroundTint="#00BF02"
+
+      android:text="Comenzar Juego"
+      android:textColor="#FFFFFF"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <!-- **** NUEVO BOTON PARA IR A LA DESPEDIDA **** -->
+  <Button
+      android:id="@+id/botonIrDespedida"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="1dp"
+      android:layout_marginBottom="10dp"
+      android:backgroundTint="#2196F3"
+      android:paddingStart="16dp"
+      android:paddingEnd="16dp"
+      android:text="Despedida"
+      android:textColor="#FFFFFF"
+      android:textSize="17sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@id/botonComenzar"
+      app:layout_constraintEnd_toEndOf="parent"
+      tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

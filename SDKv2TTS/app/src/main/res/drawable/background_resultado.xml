@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <!-- Fondo semi-transparente oscuro -->
+        <solid android:color="#A0455A64"/> <!-- Ajusta la transparencia (A0) y el color base (#455A64) -->
+        <!-- Bordes redondeados -->
+        <corners android:radius="20dp"/> <!-- Ajusta el radio como quieras -->
+        <!-- Opcional: Borde -->
+        <stroke android:width="2dp" android:color="#B0BEC5"/>
+    </shape>
+
+</selector>
+
+

@@ -1,0 +1,4 @@
+<resources>
+    <string name="SDKv2TTS">SDKv2TTS</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+</resources>
