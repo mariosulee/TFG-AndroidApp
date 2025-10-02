@@ -1,2 +1,1 @@
-En este proyecto se localiza la aplicación desarrollada para mi TFG, la cual estará integrada en el robot Buddy y despliega el juego social implementado para el incremento de las relaciones sociales entre adultos mayores. 
-Mario Sulé Domínguez (2025).
+This project contains the application developed for my Bachelor’s Thesis, which will be integrated into the Buddy robot and runs the social game implemented to enhance social interactions among older adults. Mario Sulé Domínguez (2025).
